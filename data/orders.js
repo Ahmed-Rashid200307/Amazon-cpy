@@ -1,6 +1,7 @@
 import { formatCurrency } from "../scripts/utils/money.js";
 import { fetchProducts } from "./products.js";
 import { getMatchingProduct } from "./products.js";
+import { updateDisplayedCartQuantity } from "../scripts/utils/cart-utils.js";
 
 export const orders = JSON.parse(localStorage.getItem('orders')) || [];
 
@@ -81,8 +82,11 @@ async function renderOrder() {
 
     return productsHTML;
   }
+  
 document.querySelector('.js-order-grid').innerHTML = orderHTML;
 }
+
+document.querySelector('.js-cart-quantity').innerHTML = updateDisplayedCartQuantity();
 
 renderOrder();
 
