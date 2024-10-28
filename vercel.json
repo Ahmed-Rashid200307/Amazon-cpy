@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 {
   "rewrites": [
     { "source": "/", "destination": "/amazon.html" }
   ]
-=======
-{
-  "rewrites": [
-    { "source": "/", "destination": "/amazon.html" }
-  ]
->>>>>>> 1c67774d40c38d78d40be327abd0dab7c6e0251f
 }
