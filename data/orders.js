@@ -82,11 +82,9 @@ async function renderOrder() {
 
     return productsHTML;
   }
-  
+
 document.querySelector('.js-order-grid').innerHTML = orderHTML;
 }
-
-document.querySelector('.js-cart-quantity').innerHTML = updateDisplayedCartQuantity();
 
 renderOrder();
 
